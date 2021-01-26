@@ -1,0 +1,183 @@
+@import "default.css";
+/* DO NOT MODIFY THE @import STATEMENT ABOVE */
+
+/* You will use this CSS file for each of your projects. Simply add new CSS classes and elements to the end of the file. */
+
+/* Be careful to keep your selector names unique to avoid collisions, which can cause confusion. */
+
+.personal h2 {
+  color: rgb(0, 200, 200);
+}
+
+.personal h2 ~ h2 {
+  color: rgb(0, 200, 0);
+}
+
+.personal h2 ~ h2 ~ h2 {
+  color: rgb(200, 200, 0);
+}
+
+.personal .degree {
+  font-weight: bold;
+}
+
+.personal .diploma {
+  font-style: italic;
+}
+
+.personal .certificate {
+  text-decoration: underline;
+}
+
+.personal a:hover {
+  font-size: 150%;
+}
+
+.schedule tr {
+  text-align: center;
+}
+
+.schedule th {
+  background-color: rgb(255, 55, 55);
+}
+
+.schedule tr:nth-child(even) {
+  background-color: rgb(255, 205, 205);
+}
+
+.schedule ol {
+  list-style-type: decimal;
+}
+
+.schedule ol ol {
+  list-style-type: upper-alpha;
+}
+
+.account label.radio {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.account label.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.account .radiomark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.account label.radio input:checked ~ .radiomark {
+  background-color: green;
+}
+
+.account .radiomark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.account label.radio input:checked ~ .radiomark:after {
+  display: block;
+}
+
+.account label.radio .radiomark:after {
+ 	top: 5.5px;
+	left: 5.5px;
+	width: 4px;
+	height: 4px;
+	border-radius: 75%;
+	background: lightgreen;
+}
+
+.account label.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.account label.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.account .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: grey;
+}
+
+.account label.checkbox input:checked ~ .checkmark {
+  background-color: blue;
+}
+
+.account .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.account label.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.account label.checkbox .checkmark:after {
+  left: 4px;
+  top: 0px;
+  width: 4px;
+  height: 8px;
+  border: solid lightblue;
+  border-width: 0px 3px 3px 0px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.payment h2 {
+  color: rgb(0, 32, 100);
+}
+
+.stats h2 {
+  color: rgb(0, 100, 50);
+}
+
+.stats body {
+  /*
+  Credit for striped background goes to:
+  https://css-tricks.com/stripes-css/
+  */
+  background: repeating-linear-gradient(-45deg, rgb(200, 255, 180), rgb(200, 255, 180) 10px, rgb(150, 250, 120) 10px, rgb(150, 250, 120) 20px);
+}
+
+.stats input[type=reset], .stats input[type=submit] {
+  color: rgb(0, 0, 0);
+  background-color: rgb(230, 255, 215);
+  border: 2px solid rgb(0, 100, 50);
+  border-radius: 4px;
+}

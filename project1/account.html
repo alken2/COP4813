@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<link href="../css/mySite.css" rel="stylesheet">
+<html class="account">
+  <meta charset="utf-8">
+  <title>Create Account</title>
+  <form action="https://unfinishedbusiness.app/alert.php" method="post">
+    <label for="first">First Name</label><br>
+    <input type="text" name="first" id="first"><br><br>
+    <label for="last">Last Name</label><br>
+    <input type="text" name="last" id="last"><br><br>
+    <label for="email">Email Address</label><br>
+    <input type="text" name="email" id="email"><br><br>
+    <label for="pass">Password</label><br>
+    <input type="password" name="pass" id="pass"><br><br>
+    <label for="confpass">Confirm Password</label><br>
+    <input type="password" name="confpass" id="confpass"><br><br>
+    <label for="birthdate">Birth Date</label><br>
+    <input type="date" name="birthdate" id="birthdate" min="1970-01-01" max="2025-12-31" value="2015-10-21"><br><br>
+    <div>Major</div>
+    <label for="compsci" class="radio">Computer Science
+      <input type="radio" name="majors" id="compsci" value="Computer Science">
+      <span class="radiomark"></span>
+    </label>
+    <label for="infosci" class="radio">Information Science
+      <input type="radio" name="majors" id="infosci" value="Information Science">
+      <span class="radiomark"></span>
+    </label>
+    <label for="infosys" class="radio">Information Systems
+      <input type="radio" name="majors" id="infosys" value="Information Systems">
+      <span class="radiomark"></span>
+    </label>
+    <label for="infotech" class="radio">Information Technology
+      <input type="radio" name="majors" id="infotech" value="Information Technology">
+      <span class="radiomark"></span>
+    </label><br>
+    <div>Programming Language Experience</div>
+    <table>
+      <tr>
+        <td>
+          <label for="c" class="checkbox">
+            <input type="checkbox" name="c" id="c">C
+            <span class="checkmark"></span>
+          </label>
+        </td>
+        <td>
+          <label for="cs" class="checkbox">
+            <input type="checkbox" name="cs" id="cs">C#
+            <span class="checkmark"></span>
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="java" class="checkbox">
+            <input type="checkbox" name="java" id="java">Java
+            <span class="checkmark"></span>
+          </label>
+        </td>
+        <td>
+          <label for="js" class="checkbox">
+            <input type="checkbox" name="js" id="js">JavaScript
+            <span class="checkmark"></span>
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="php" class="checkbox">
+            <input type="checkbox" name="php" id="php">PHP
+            <span class="checkmark"></span>
+          </label>
+        </td>
+        <td>
+          <label for="py" class="checkbox">
+            <input type="checkbox" name="py" id="py">Python
+            <span class="checkmark"></span>
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="vb" class="checkbox">
+            <input type="checkbox" name="vb" id="vb">Visual Basic
+            <span class="checkmark"></span>
+          </label>
+        </td>
+        <td>
+          <label for="other" class="checkbox">
+            <input type="checkbox" name="other" id="other">Other
+            <span class="checkmark"></span>
+          </label>
+        </td>
+      </tr>
+    </table><br>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+	<input type="hidden" name="username" value="841486176" />
+    <input type="hidden" name="to_email_address" value="n01448423@unf.edu" />
+    <input type="hidden" name="to_display_name" value="Kenneth Alcineus" />
+  </form><br>
+  <div><a href="index.html">Personal</a></div>
+  <div><a href="../index.html">ePortfolio</a></div>
+</html>

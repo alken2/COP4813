@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<link href="../css/mySite.css" rel="stylesheet">
+<script src="script.js"></script>
+<html class="stats">
+  <meta charset="utf-8">
+  <title>Statistical Calculator</title>
+  <body>
+    <h2>Statistical Calculator</h2>
+    <form onSubmit="return performStatistics();">
+      <label for="userinput">Input</label><br>
+      <textarea id="userinput" name="userinput" rows="4" cols="40"></textarea><br><br>
+      <input type="reset" value="Reset">
+	    <input type="submit" value="Submit"><br><br>
+      <label for="sum">Sum</label><br>
+      <input type="text" name="sum" id="sum" readonly><br><br>
+      <label for="min">Min</label><br>
+      <input type="text" name="min" id="min" readonly><br><br>
+      <label for="max">Max</label><br>
+      <input type="text" name="max" id="max" readonly><br><br>
+      <label for="median">Median</label><br>
+      <input type="text" name="median" id="median" readonly><br><br>
+      <label for="mode">Mode</label><br>
+      <input type="text" name="mode" id="mode" readonly><br><br>
+      <label for="mean">Mean</label><br>
+      <input type="text" name="mean" id="mean" readonly><br><br>
+      <label for="stdev">Standard Deviation</label><br>
+      <input type="text" name="stdev" id="stdev" readonly><br><br>
+      <label for="variance">Variance</label><br>
+      <input type="text" name="variance" id="variance" readonly><br><br>
+    </form><br><br>
+    <div><a href="../index.html">ePortfolio</a></div>
+  </body>
+</html>
